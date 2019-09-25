@@ -218,9 +218,10 @@ let person = [{
     randomFact: "im grumpy"
    },
 ]
+
 function setup() {
   createCanvas(800,800);
   background(200);
   person.pop();
-  console.log(person[2]);
+  console.log(person[2])
 }
