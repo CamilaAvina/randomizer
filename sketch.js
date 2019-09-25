@@ -1,4 +1,5 @@
-let person = [{
+let person = [
+  {
       firstName: "Zainib",
       lastName: "Ahmed",
       color: "Blue",
@@ -67,7 +68,7 @@ let person = [{
       game: "Pokemon Crystal Version",
       superhero: "Batman",
       randomFact: "I have two pet guinea pigs",
-      {
+    },{
         firstName: "Hao",
         lastName: "Rong",
         color: "hex(#4285F4)",
@@ -223,5 +224,5 @@ function setup() {
   createCanvas(800,800);
   background(200);
   person.pop();
-  console.log(person[2])
+  console.log(person[10])
 }
