@@ -176,4 +176,51 @@ let person = [{
     superhero: "Wonder Woman",
     randomFact: "I want to live in another country someday"
    },
+   {
+    firstName: "Vanessa",
+    lastName: "Blacow-Berggen",
+    color: "pink",
+    animal:"cat",
+    book:"The Heartstriker series",
+    superHero:"Spiderman",
+    randomFact:"I really like cats, especially my cat",
+    game: "Spyro Reignited Trilogy",
+    movie: "Cats Don't Dance"
+     },{
+    firstName: "Matteo",
+    lastName: "Leva",
+    color: "Black",
+    animal: "Cat",
+    book: "Pillars of the earth",
+    movie:"The Godfather",
+    game: "Witcher 3",
+    superHero: "spider man",
+    randomFact:"I'm disappointed in GOT season 8",
+  },{
+    firstName: "Anthony",
+    lastName: "Valdovinos",
+    color:"purple",
+    animal: "eagle",
+    book: "Hatchet",
+    movie: "Titanic",
+    game: "Starfox Adventures",
+    superHero: "none",
+    randomFact: "I studied Japanese for 4 years"
+  },{
+    firstName: "asra",
+    lastName: "siddiqui",
+    color: "idk",
+    animal: "chameleons",
+    book: "codex 1962",
+    movie: "pulp fiction",
+    game: "idk",
+    superhero: "hate em all",
+    randomFact: "im grumpy"
+   },
 ]
+function setup() {
+  createCanvas(800,800);
+  background(200);
+  person.pop();
+  console.log(person[2]);
+}
