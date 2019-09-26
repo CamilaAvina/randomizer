@@ -37,7 +37,7 @@ let person = [
       movie: "The Fountain",
       game: "Halo Reach",
       superhero: "Superman",
-      fact: "I am made up of stardust"
+      fact: "I am made up of stardust",
     }, {
       firstName: "Lydia",
       lastName: "Lim",
@@ -79,7 +79,7 @@ let person = [
         superhero: "Tony Stark",
         randomFact: "I like cats.",
       },{
-    firstname: "Kaicong",
+    firstName: "Kaicong",
     lastname: "Tang",
     color: "black",
     animal: "dog",
@@ -219,10 +219,27 @@ let person = [
     randomFact: "im grumpy"
    },
 ]
+let randomIndex;
 
 function setup() {
   createCanvas(800,800);
   background(200);
-  person.pop();
-  console.log(person[10])
+
+
+
+}
+
+function draw(){
+
+
+
+}
+
+function mousePressed(){
+  background(random(200,255));
+  randomIndex = int(random(person.length))
+  text(person[randomIndex].firstName, 100,100);
+  person.splice(randomIndex,1);
+
+
 }
