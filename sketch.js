@@ -230,7 +230,16 @@ function setup() {
 }
 
 function draw(){
+  noStroke();
+  	directionalLight(255, 196, -225, -0.5, 1, -1);
+  	directionalLight(198, 255, -184, -1, 1, 0.5);
+    	directionalLight(243, 115, 255, 1, -1, 0.5);
+      directionalLight(192, 184, 255, -1,4, -0.5);
+      directionalLight(168, 255, 246, -1,-1, -0.5);
+      directionalLight(252, 0, -102, 1,1, -0.5); //specularMaterial(255, 200, 200);
 
+  	translate(mouseX - width / 2, mouseY - height / 2);
+  	sphere(50);
 
 
 }
