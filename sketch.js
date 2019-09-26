@@ -220,26 +220,52 @@ let person = [
    },
 ]
 let randomIndex;
-
+let animating = false;
+let counter = 0
 function setup() {
   createCanvas(800,800);
   background(200);
-
+  textSize(32);
+  text("click to randomize",50,50);
+  setTimeout(changeBackground,1000);
 
 
 }
 
 function draw(){
+  if(animating == true){
+    ellipse(random(width),random(height), random(50,200))
+  }
 
+}
+function changeBackground(){
+  if (counter <= 15){
+    counter++;
+    console.log(counter);
+  background(random(255),random(255),random(255));
+  setTimeout(changeBackground,1000);
+  } else{
+
+    }
+}
+
+function randomize(){
+  animating = false;
+  if (person[0]){
+  background(random(255),random(255),random(255));
+  randomIndex = int(random(person.length))
+  text(person[randomIndex].firstName, 100,100);
+  person.splice(randomIndex,1);
+
+  } else {
+  background(random(255),random(255),random(255));
+  text("end of list",100,100);
+  }
 
 
 }
 
 function mousePressed(){
-  background(random(200,255));
-  randomIndex = int(random(person.length))
-  text(person[randomIndex].firstName, 100,100);
-  person.splice(randomIndex,1);
-
-
+  animating = true;
+  setTimeout(randomize,2000);
 }
