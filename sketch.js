@@ -223,7 +223,7 @@ let randomIndex;
 let animating = false;
 let counter = 0
 function setup() {
-  createCanvas(800,800);
+  createCanvas(800,800,);//WEBGL);
   background(200);
   textSize(32);
   text("click to randomize",50,50);
@@ -234,12 +234,16 @@ function setup() {
 
 function draw(){
   if(animating == true){
-    ellipse(random(width),random(height), random(50,200))
+    fill(random(255),random(255),random(255));
+    ellipse(random(width),random(height), random(50,200),random(255));
+
+    //sphere(random(40));
+
   }
 
 }
 function changeBackground(){
-  if (counter <= 15){
+  if (counter <= 8){
     counter++;
     console.log(counter);
   background(random(255),random(255),random(255));
@@ -252,13 +256,13 @@ function changeBackground(){
 function randomize(){
   animating = false;
   if (person[0]){
-  background(random(255),random(255),random(255));
+  background(random(255));
   randomIndex = int(random(person.length))
   text(person[randomIndex].firstName, 100,100);
   person.splice(randomIndex,1);
 
   } else {
-  background(random(255),random(255),random(255));
+  background(random(255));
   text("end of list",100,100);
   }
 
