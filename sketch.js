@@ -82,31 +82,9 @@ let person = [
 
         animal: "otter",
 
-
-
-
-
-
-
-
         book: "A Brief History of Time",
 
-
-
-
-
-
-
-
         movie: "Angry Birds 2",
-
-
-
-
-
-
-
-
         game: "Final Fantasy XIV",
 
 
@@ -843,14 +821,20 @@ let person = [
 let randomIndex;
 let animating = false;
 let counter = 0
+let button;
+//let cnv;
 function setup() {
-  createCanvas(800,800,);//WEBGL);
+cnv=createCanvas(800,800,);//WEBGL);
+cnv.parent("#canvasDiv");
   background(200);
   textSize(32);
   text("click to randomize",50,50);
   setTimeout(changeBackground,1000);
 
-
+  //button = createButton("click to randomize");
+  button = select('#randButton');
+  button.mousePressed(buttonPressed);
+  button.class("randomizeButton");
 }
 
 function draw(){
@@ -890,7 +874,7 @@ function randomize(){
 
 }
 
-function mousePressed(){
+function buttonPressed(){
   animating = true;
   setTimeout(randomize,2000);
 }
