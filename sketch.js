@@ -822,7 +822,13 @@ let randomIndex;
 let animating = false;
 let counter = 0
 let button;
-//let cnv;
+let addMoreButton;
+let cnv;
+let nameInputs = [];
+let firstTime = true;
+
+
+
 function setup() {
 cnv=createCanvas(800,800,);//WEBGL);
 cnv.parent("#canvasDiv");
@@ -834,8 +840,17 @@ cnv.parent("#canvasDiv");
   //button = createButton("click to randomize");
   button = select('#randButton');
   button.mousePressed(buttonPressed);
-  button.class("randomizeButton");
+  addMoreButton = select('#addMoreButton');
+  addMoreButton.mousePressed(addAnotherInput);
+
+
+for(let i = 0; i <3; i++){
+  nameInputs.push(createInput());
+  nameInputs[nameInputs.length - 1].parent('#inputFields');
 }
+}
+
+
 
 function draw(){
   if(animating == true){
@@ -847,6 +862,12 @@ function draw(){
   }
 
 }
+
+function addAnotherInput(){
+  nameInputs.push(createInput());
+  nameInputs[nameInputs.length - 1].parent('#inputFields');
+}
+
 function changeBackground(){
   if (counter <= 8){
     counter++;
@@ -875,6 +896,13 @@ function randomize(){
 }
 
 function buttonPressed(){
+  if (firstTime){
+  for (let i = 0; i < nameInputs.length; i++){
+    person.push(nameInputs[i].value());
+
+  }
+  firstTime = false;
+}
   animating = true;
   setTimeout(randomize,2000);
 }
