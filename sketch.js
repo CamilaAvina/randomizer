@@ -71,112 +71,733 @@ let person = [
     },{
         firstName: "Hao",
         lastName: "Rong",
-        color: "hex(#4285F4)",
-        animal: "otter",
-        book: "A Brief History of Time",
-        movie: "Angry Birds 2",
-        game: "Final Fantasy XIV",
-        superhero: "Tony Stark",
-        randomFact: "I like cats.",
-      },{
-    firstName: "Kaicong",
-    lastname: "Tang",
-    color: "black",
-    animal: "dog",
-    movie: "iron man123",
-    game: "csgo",
-    superhero : "iron man",
-    fact: "love gaming"
-  },{
-    firstName: "Sumedh",
-    lastName: "Vedanthi",
-    color:"Blue" ,
-    animal: "Crow",
+        color: "hex(#4285F4)",
+
+
+
+
+
+
+
+
+        animal: "otter",
+
+
+
+
+
+
+
+
+        book: "A Brief History of Time",
+
+
+
+
+
+
+
+
+        movie: "Angry Birds 2",
+
+
+
+
+
+
+
+
+        game: "Final Fantasy XIV",
+
+
+
+
+
+
+
+
+        superhero: "Tony Stark",
+
+
+
+
+
+
+
+
+        randomFact: "I like cats.",
+
+
+
+
+
+
+
+
+      },
+
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+    firstName: "Kaicong",
+
+
+
+
+
+
+
+
+    lastname: "Tang",
+
+
+
+
+
+
+
+
+    color: "black",
+
+
+
+
+
+
+
+
+    animal: "dog",
+
+
+
+
+
+
+
+
+    movie: "iron man123",
+
+
+
+
+
+
+
+
+    game: "csgo",
+
+
+
+
+
+
+
+
+    superhero : "iron man",
+
+
+
+
+
+
+
+
+    fact: "love gaming"
+
+
+
+
+
+
+
+
+  },
+
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+    firstName: "Sumedh",
+
+
+
+
+
+
+
+
+    lastName: "Vedanthi",
+
+
+
+
+
+
+
+
+    color:"Blue" ,
+
+
+
+
+
+
+
+
+    animal: "Crow",
+
+
+
+
+
+
+
+
     book: "Of Mice and Men",
-    movie: "American Psycho",
-    game: "Fruit Ninja" ,
-    superHero: "Batman" ,
-    randomFact: "im a black belt",
-  },{
-    firstName: "Chris",
-    lastName: "Weber",
-    color: "green",
-    animal: "cat",
-    book: "Hitchhiker's Guide to the Galaxy",
-    movie: "Spiderman Into The Spiderverse",
-    game: "The Legend of Zelda Breath of the Wild",
-    superhero: "Iron Man",
-    randomFact: "I'm vegetarian"
-  },{
-    firstName: "Andy",
-    lastName: "Wu",
-    color: "Red",
-    animal:"Kiwi",
-    book: "Romance of the Three Kingdoms",
-    movie:"Shrek 2",
-    game: "Super Mario 64",
-    superhero: "Static Shock",
-    randomFact:"I've had jaw correction surgery"
-  },{
-    firstName: "xiaowei",
-    lastName: "zheng",
-    color:" green",
-    animal: "babies",
-    book: "the little girl at the window",
-    movie: "eat drink man woman",
-    game: "none",
-    superhero: "none",
-    randomFact: "don't drink coke"
-  },{
-    firstName: "Sierra",
-    lastName: "Roe",
-    color :"purple",
-    animal: "dog",
-    book :"phantom tollbooth",
-    movie :"Naussica of the Valley of the Wind",
-    game :"pokemon heartgold",
-    superhero :"captain marvel",
-    randomFact: "can run 7 minute mile"
-  },{
-     firstName: "Hector",
-     lastName: "Flores",
-     Color: "Blue",
-     animal:"Dog",
-     book:"Captain Underpants",
-     movie:"Ace Ventura pet detective",
-     game:"Smash Brothers",
-     superhero:"Flash",
-     randomFact:"I am a Libra"
-   },{
-     firstName:"Kevin",
-     lastName:"Sagara",
-     color:"yellow",
-     animal:"cat",
-     book:"sherlock holmes",
-     movie:"Shaun of the Dead",
-     game:"osu!",
-     superhero:"batman",
-     fact:"learning japanese"
-   },{
-     firstName: "Rachel",
-     lastName: "Centinaje",
-     color: "green",
-     animal:"dogs",
-     book: "none",
-     movie:"Drive",
-     game: "Dishonored",
-     superhero: "Deadpool",
-     randomFact:"I went camping this weekend"
-     },{
-    firstName:"Alicia",
-    lastName:"Breinke",
-    color: "purple",
-    animal: "dog",
-    book:"The Art of Racing in the Rain",
-    movie: "Spirited Away",
-    superhero: "Wonder Woman",
-    randomFact: "I want to live in another country someday"
-   },
+    movie: "American Psycho",
+
+
+
+
+
+
+
+
+    game: "Fruit Ninja" ,
+
+
+
+
+
+
+
+
+    superHero: "Batman" ,
+
+
+
+
+
+
+
+
+    randomFact: "im a black belt",
+
+
+
+
+
+
+
+
+  },
+
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+    firstName: "Chris",
+
+
+
+
+
+
+
+
+    lastName: "Weber",
+
+
+
+
+
+
+
+
+    color: "green",
+
+
+
+
+
+
+
+
+    animal: "cat",
+
+
+
+
+
+
+
+
+    book: "Hitchhiker's Guide to the Galaxy",
+
+
+
+
+
+
+
+
+    movie: "Spiderman Into The Spiderverse",
+
+
+
+
+
+
+
+
+    game: "The Legend of Zelda Breath of the Wild",
+
+
+
+
+
+
+
+
+    superhero: "Iron Man",
+
+
+
+
+
+
+
+
+    randomFact: "I'm vegetarian"
+
+
+
+
+
+
+
+
+  },
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+    firstName: "Andy",
+
+
+
+
+
+
+
+
+    lastName: "Wu",
+
+
+
+
+
+
+
+
+    color: "Red",
+
+
+
+
+
+
+
+
+    animal:"Kiwi",
+
+
+
+
+
+
+
+
+    book: "Romance of the Three Kingdoms",
+
+
+
+
+
+
+
+
+    movie:"Shrek 2",
+
+
+
+
+
+
+
+
+    game: "Super Mario 64",
+
+
+
+
+
+
+
+
+    superhero: "Static Shock",
+
+
+
+
+
+
+
+
+    randomFact:"I've had jaw correction surgery"
+
+
+
+
+
+
+
+
+  },
+
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+    firstName: "xiaowei",
+
+
+
+
+
+
+
+
+    lastName: "zheng",
+
+
+
+
+
+
+
+
+    color:" green",
+
+
+
+
+
+
+
+
+    animal: "babies",
+
+
+
+
+
+
+
+
+    book: "the little girl at the window",
+
+
+
+
+
+
+
+
+    movie: "eat drink man woman",
+
+
+
+
+
+
+
+
+    game: "none",
+
+
+
+
+
+
+
+
+    superhero: "none",
+
+
+
+
+
+
+
+
+    randomFact: "don't drink coke"
+
+
+
+
+
+
+
+
+  },
+
+
+
+
+
+
+{
+
+
+
+
+
+    firstName: "Sierra",
+
+
+
+
+
+    lastName: "Roe",
+
+
+
+
+
+    color :"purple",
+
+
+
+
+
+    animal: "dog",
+
+
+
+
+
+    book :"phantom tollbooth",
+
+
+
+
+
+    movie :"Naussica of the Valley of the Wind",
+
+
+
+
+
+    game :"pokemon heartgold",
+
+
+
+
+
+    superhero :"captain marvel",
+
+
+
+
+
+    randomFact: "can run 7 minute mile"
+
+
+
+  },
+
+
+
+
+{
+     firstName: "Hector",
+
+
+
+     lastName: "Flores",
+
+
+
+     Color: "Blue",
+
+
+
+     animal:"Dog",
+
+
+
+     book:"Captain Underpants",
+
+
+
+     movie:"Ace Ventura pet detective",
+
+
+
+     game:"Smash Brothers",
+
+
+
+     superhero:"Flash",
+
+
+
+     randomFact:"I am a Libra"
+
+
+
+   }
+
+,
+
+
+{
+     firstName:"Kevin",
+
+
+     lastName:"Sagara",
+
+
+     color:"yellow",
+
+
+     animal:"cat",
+
+
+     book:"sherlock holmes",
+
+
+     movie:"Shaun of the Dead",
+
+
+     game:"osu!",
+
+
+     superhero:"batman",
+
+
+     fact:"learning japanese"
+
+
+   },
+{
+
+     firstName: "Rachel",
+
+
+     lastName: "Centinaje",
+
+
+     color: "green",
+
+
+     animal:"dogs",
+
+
+     book: "none",
+
+
+     movie:"Drive",
+
+
+     game: "Dishonored",
+
+
+     superhero: "Deadpool",
+
+
+     randomFact:"I went camping this weekend"
+
+
+     },
+{
+
+    firstName:"Alicia",
+
+
+    lastName:"Breinke",
+
+
+    color: "purple",
+
+
+    animal: "dog",
+
+    book:"The Art of Racing in the Rain",
+
+    movie: "Spirited Away",
+
+
+    superhero: "Wonder Woman",
+
+
+    randomFact: "I want to live in another country someday"
+
+   }
+,
+
    {
     firstName: "Vanessa",
     lastName: "Blacow-Berggen",
@@ -218,12 +839,12 @@ let person = [
     superhero: "hate em all",
     randomFact: "im grumpy"
    },
-]
+]
 let randomIndex;
 let animating = false;
 let counter = 0
 function setup() {
-  createCanvas(800,800);
+  createCanvas(800,800,);//WEBGL);
   background(200);
   textSize(32);
   text("click to randomize",50,50);
@@ -234,12 +855,16 @@ function setup() {
 
 function draw(){
   if(animating == true){
-    ellipse(random(width),random(height), random(50,200))
+    fill(random(255),random(255),random(255));
+    ellipse(random(width),random(height), random(50,200),random(255));
+
+    //sphere(random(40));
+
   }
 
 }
 function changeBackground(){
-  if (counter <= 15){
+  if (counter <= 8){
     counter++;
     console.log(counter);
   background(random(255),random(255),random(255));
@@ -252,13 +877,13 @@ function changeBackground(){
 function randomize(){
   animating = false;
   if (person[0]){
-  background(random(255),random(255),random(255));
+  background(random(255));
   randomIndex = int(random(person.length))
   text(person[randomIndex].firstName, 100,100);
   person.splice(randomIndex,1);
 
   } else {
-  background(random(255),random(255),random(255));
+  background(random(255));
   text("end of list",100,100);
   }
 
